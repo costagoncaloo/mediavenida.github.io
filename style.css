@@ -1,0 +1,156 @@
+/*----------------------------------------------------------------------------- Estilo Geral ----------------------------------------------------------------------*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    color: black;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* Cabeçalho */
+header {
+    background: #333;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none; 
+
+}
+.header-title {
+    text-decoration: none; /* Remove a linha de baixo */
+    color: white; /* Cor do título */
+}
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+/* Ícone do menu hambúrguer */
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Caixa flutuante do menu (escondida por padrão) */
+.menu-box {
+    display: none; /* Fica invisível até ser ativada */
+    position: absolute;
+    top: 60px; /* Distância do topo */
+    right: 10px; /* Alinhado à direita */
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+}
+
+/* Lista de links dentro da caixa */
+.menu-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-box li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-box li:last-child {
+    border-bottom: none;
+}
+
+/* Links */
+.menu-box a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+/* Efeito hover nos links */
+.menu-box a:hover {
+    background: #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Exibir o menu quando ativo */
+.menu-box.active {
+    display: block;
+}
+
+/* Rodapé Geral */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo das imagens */
+main img {
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Formatação Geral de Formulários */
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: small;
+    background-color: #2b2b2b;
+    padding: 5px;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+input {
+    font-size: medium;
+    padding: 5px;
+    width: 100%; /* Garante que o input ocupe a largura disponível */
+    box-sizing: border-box; /* Inclui o padding na largura */
+}
+aside {
+    background-color: #2a2a2a; /* Cor de fundo */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    width: 250px; /* Largura do aside */
+    float: right; /* Posicionamento à direita da página */
+}
+
+aside img {
+    flex-direction: row;
+    width: 100%; /* A imagem preenche a largura do aside */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+}
+
+
+
+
+
