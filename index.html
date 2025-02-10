@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<htlm lang=""pt">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mediavenida</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediavenida</title>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="capa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="home-page">
 
-    </head>
-    <body class="home-page">
-        <header>
-            <a href="index.html" class="header-title">
-                <h1>Mediavenida</h1> <!-- Aqui pode ser o título da página -->
-            </a>
-            
-            <nav class="nav-area">
-               
-                <!-- Botão do menu -->
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        
+    <header>
+        <a href="index.html" class="header-title">
+            <h1>Mediavenida</h1>
+        </a>
+
+        <nav class="nav-area">
+            <!-- Botão do menu -->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
             <!-- Caixa do menu -->
             <div class="menu-box" id="menuBox">
                 <ul>
@@ -31,21 +30,19 @@
                     <li><a href="protocolos.html"><i class="fas fa-question-circle"></i> Protocolos</a></li>
                 </ul>
             </div>
-        </header>
-       
-        
-        <main class="main-area">
-            <h2>Página Inicial</h2>
-            
-        </main>
+        </nav>
+    </header>
 
-    
+    <section class="hero">
+        <div class="overlay">
+            <h2>Bem-vindo á Mediavenida</h2>
+        </div>
+    </section>
 
-        <footer>
-            <p>Mediavenida - footer</p>
-        </footer>
-        
-        <script src="script.js"></script>
+    <footer>
+        <p>Mediavenida - footer</p>
+    </footer>
 
-    </body>
-</htlm>
+    <script src="script.js"></script>
+</body>
+</html>
